@@ -30,6 +30,8 @@ export default function TextGrid(): ReactNode {
         };
     }, []);
 
+    const displayWord = `${word}`;
+
     return isLoading ? (
         <div className='flex h-screen max-h-full w-full items-center justify-center p-4'>
             <div className='h-full w-full bg-conic-30' />
@@ -42,7 +44,7 @@ export default function TextGrid(): ReactNode {
                         <div className='ml-[-100px] w-max font-heading font-bold'>
                             {Array.from({ length: 20 }, (_, inner) => (
                                 <span key={inner} className='pr-6'>
-                                    {word}
+                                    {displayWord}
                                 </span>
                             ))}
                         </div>
@@ -50,7 +52,7 @@ export default function TextGrid(): ReactNode {
                         <div className='ml-[-276px] w-max font-heading font-bold'>
                             {Array.from({ length: 20 }, (_, inner) => (
                                 <span key={inner} className='pr-6'>
-                                    {word}
+                                    {displayWord}
                                 </span>
                             ))}
                         </div>
@@ -58,7 +60,7 @@ export default function TextGrid(): ReactNode {
                         <div className='ml-[-40px] w-max font-heading font-bold'>
                             {Array.from({ length: 20 }, (_, inner) => (
                                 <span key={inner} className='pr-6'>
-                                    {word}
+                                    {displayWord}
                                 </span>
                             ))}
                         </div>
@@ -66,7 +68,7 @@ export default function TextGrid(): ReactNode {
                         <div className='ml-[-205px] w-max font-heading font-bold'>
                             {Array.from({ length: 20 }, (_, inner) => (
                                 <span key={inner} className='pr-6'>
-                                    {word}
+                                    {displayWord}
                                 </span>
                             ))}
                         </div>
@@ -74,7 +76,7 @@ export default function TextGrid(): ReactNode {
                         <div className='ml-[-365px] w-max font-heading font-bold'>
                             {Array.from({ length: 20 }, (_, inner) => (
                                 <span key={inner} className='pr-6'>
-                                    {word}
+                                    {displayWord}
                                 </span>
                             ))}
                         </div>
